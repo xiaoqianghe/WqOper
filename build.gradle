@@ -1,0 +1,76 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+
+
+        maven { url "https://jitpack.io" }
+    }
+
+
+
+}
+
+
+
+
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 16,
+            targetSdkVersion : 26,
+    ]
+
+//
+//    dependencies = [
+//            supportV4                    : 'com.android.support:support-v4:26.+',
+//            supportV7                    : 'com.android.support:appcompat-v7:26.+',
+//            design                       : 'com.android.support:design:26.+',
+//            constraint                   : 'com.android.support.constraint:constraint-layout:1.0.2',
+//
+//            //4
+////            butterknife                  : 'com.jakewharton:butterknife:8.8.1',
+////            butterknifeCompiler          : 'com.jakewharton:butterknife-compiler:8.8.1',
+//            gson                         : 'com.google.code.gson:gson:2.8.1',
+//            SmartRefreshLayout           : 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3',
+//            BaseRecyclerViewAdapterHelper: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34',
+//            SuperTextView                : 'com.github.lygttpod:SuperTextView:2.1.5',
+//            gif                          : 'pl.droidsonroids.gif:android-gif-drawable:1.2.8',
+//            barlibrary                   : 'com.gyf.barlibrary:barlibrary:2.3.0',
+//
+//            //retrofit 4
+//            retrofit2                    : 'com.squareup.retrofit2:retrofit:2.3.0',
+//            convertergson                : 'com.squareup.retrofit2:converter-gson:2.3.0',
+//            adapterrxjava2               : 'com.squareup.retrofit2:adapter-rxjava2:2.3.0',
+//            logginginterceptor           : 'com.squareup.okhttp3:logging-interceptor:3.8.1',
+//
+//            //rx 6
+//            rxandroid                    : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+//            rxjava                       : 'io.reactivex.rxjava2:rxjava:2.1.0',
+//            rxbinding                    : 'com.jakewharton.r                                                                                                                                                                                                               xbinding2:rxbinding:2.0.0',
+//            rxlifecycle                  : 'com.trello.rxlifecycle2:rxlifecycle:2.1.0',
+//            rxlifecyclecomponents        : 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0',
+//            rxpermissions                : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar',
+//
+//            //
+//            tencent                      : 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+',
+//    ]
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    style="@style/ToolbarStyle"
+    android:elevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorStatus">
+
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:textColor="@color/white"
+        tools:text="title" />
+
+    <ImageView
+        android:id="@+id/toolbar_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@mipmap/wd_ic_filter"
+        android:layout_gravity="right|center_vertical"/>
+
+    <TextView
+        android:id="@+id/toolbar_subtitle"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:textSize="14sp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:lines="1"
+        android:textColor="@color/white"
+        tools:text="subtitle" />
+
+
+</android.support.v7.widget.Toolbar>

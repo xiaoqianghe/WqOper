@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBg</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/SlideRightAnimation</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Base.Widget.AppCompat.ActionBar">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+    <style name="SlideRightAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/base_slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@anim/base_slide_out_right</item>
+        <item name="android:taskOpenEnterAnimation">@anim/base_slide_in_right</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@anim/base_slide_out_right</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/base_slide_in_right</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@anim/base_slide_out_right</item>
+    </style>
+
+
+    <style name="AbsDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DialogBottomAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/base_dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/base_dialog_exit_anim</item>
+    </style>
+
+    <style name="DialogAnimation" parent="android:Animation">
+        <!--<item name="android:windowEnterAnimation">@abase_dialog_enter_animanim</item>-->
+        <!--<item name="android:windowExitAnimation">@abase_dialog_exit_animanim</item>-->
+        <item name="android:windowEnterAnimation">@anim/base_dialog_loading_start</item>
+        <item name="android:windowExitAnimation">@anim/base_dialog_loading_stop</item>
+    </style>
+
+    <style name="DialoLoadinggAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/base_dialog_loading_start</item>
+        <item name="android:windowExitAnimation">@anim/base_dialog_loading_stop</item>
+    </style>
+</resources>
